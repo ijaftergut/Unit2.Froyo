@@ -1,5 +1,5 @@
 const list = window.prompt("What flavors would you like? (ex. coffee, strawberry, vanilla)");
-let array = list.split(',')
+let array = list.split(', ')
 
 function getFlavor(str){
     const flavors = {};
@@ -14,9 +14,3 @@ function getFlavor(str){
 }
 flavors = getFlavor(array)
 console.log(flavors)
-
-let sum = 0
-for(let key in flavors){
-    sum = sum + (flavors[key])
-}
-console.log(sum)
